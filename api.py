@@ -15,6 +15,7 @@ data = json.load(f)
 def send_inflation():
   date = request.args.get('date')
   for i in data:
+    print(i)
     if date==i['date']:
       return jsonify(i)
 
