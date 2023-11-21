@@ -14,9 +14,8 @@ data = json.load(f)
 @app.route('/infilation')
 def send_inflation():
   date = request.args.get('date')
-  for i in data:
-    print(i)
-    if date==i['date']:
+  for i in data["montly_inflations_2023"]:
+    if date==i["date"]:
       return jsonify(i)
 
 
