@@ -24,7 +24,7 @@ def send_inflation():
 
 
 @app.route('/foreigntrade')
-def send_inflation():
+def foreign_trade():
   date = request.args.get('date')
   for i in data2["foregintrade"]:
     if date==i["date"]:
