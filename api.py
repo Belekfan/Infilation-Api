@@ -48,7 +48,7 @@ def gross_national_product():
       return jsonify(i)
 
 @app.route('/gross-domestic-product')
-def gross_national_product():
+def gross_domestic_product():
   date = request.args.get('date')
   for i in data4["gross-domestic-product"]:
     if date==i["date"]:
