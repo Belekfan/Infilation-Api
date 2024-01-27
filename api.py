@@ -20,6 +20,11 @@ f3 = open('data3.json')
 
 data3 = json.load(f3)
 
+f4 = open('data4.json')
+
+
+data4 = json.load(f4)
+
 @app.route('/infilation')
 def send_inflation():
   date = request.args.get('date')
@@ -39,6 +44,13 @@ def foreign_trade():
 def gross_national_product():
   date = request.args.get('date')
   for i in data3["gross-national-product"]:
+    if date==i["date"]:
+      return jsonify(i)
+
+@app.route('/gross-domestic-product')
+def gross_national_product():
+  date = request.args.get('date')
+  for i in data4["gross-domestic-product"]:
     if date==i["date"]:
       return jsonify(i)
 
