@@ -40,19 +40,13 @@ def foreign_trade():
     if date==i["date"]:
       return jsonify(i)
     
-@app.route('/gross-national-product')
-def gross_national_product():
-  date = request.args.get('date')
-  for i in data3["gross-national-product"]:
-    if date==i["date"]:
-      return jsonify(i)
-
 @app.route('/gross-domestic-product')
 def gross_domestic_product():
   date = request.args.get('date')
-  for i in data4["gross-domestic-product"]:
+  for i in data3["gross-domestic-product"]:
     if date==i["date"]:
       return jsonify(i)
+
 
 @app.route('/')
 def hello_world():
