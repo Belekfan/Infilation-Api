@@ -1,0 +1,29 @@
+{
+    "gross-domestic-product":[
+
+
+
+        {
+            "date":"2022",
+            "yearly":"15006574",
+            "1.quarter": "1395931",
+            "2.quarter":"1592926",
+            "3.quarter": "1931231",
+            "4.quarter":"2328700"
+
+        },
+
+        {
+            "date":"2021",
+            "yearly":"7248789",
+            "1.quarter": "1395931",
+            "2.quarter":"1592926",
+            "3.quarter": "1931231",
+            "4.quarter":"2328700"
+
+
+
+        }
+]
+
+}
